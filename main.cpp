@@ -4,29 +4,29 @@
 #include <fstream>
 using namespace std;
 int main(int argc, const char * argv[]) {
-    string word1, word2;
+    string first1, second2;
     cout << "Please enter the string of the same length" << endl;
-    cout << "first 1: ";
+    cout << "first1: ";
     cin >> word1;
-    while (first.length() != 4) {
+    while (first1.length() != 4) {
         cerr << "\nERROR: Please enter only four letter words\n";
-        cout << "first 1: ";
+        cout << "first1: ";
         cin >> first;
     }
     cout << "OK well obeyed" << endl;
     cout << endl << "second 2: ";
-    cin >> word2;
-    while (word2.length() != 4) {
+    cin >> second2;
+    while (second2.length() != 4) {
         cerr << "\nERROR: Please enter only four letter words\n";
-        cout << "second 2: ";
-        cin >> second;
+        cout << "second2: ";
+        cin >> second2;
     }
     cout << "OK well obeyed" << endl;
-    for (int i = 0; i < first 1.length(); i++) {
-        first 1[i] = first[i] & 0xDF;
-        second[i] = second[i] & 0xDF;
+    for (int i = 0; i < first1.length(); i++) {
+        first1[i] = first[i] & 0xDF;
+        second2[i] = second2[i] & 0xDF;
     }
-    cout << word1 << endl << word2 << endl;
+    cout << first1 << endl << second2 << endl;
     ifstream inFile;
     inFile.open("EnglishWords.dat");
     if (inFile.fail()) {
